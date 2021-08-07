@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: black;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(https://www.metro-check.com/wp-content/uploads/2021/01/understanding-civil-background-checks-and-why-you-should-conduct-them-when-hiring-metrodata-1024x683.jpg) no-repeat fixed center;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body .bg-color {
+  position: fixed;
+  background-color: rgba(255, 255, 0, 0.384);
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-container {
+  padding: 25px 0;
+  margin-top: 50px;
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.main-container .header {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.main-container .header #title {
+  font-weight: 700;
+  font-size: 2.7rem;
+  padding-bottom: 15px;
+  color: black;
+}
+
+.main-container .header #description {
+  font-size: 1.2rem;
+  color: white;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(140, 209, 1, 0.527);
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+#survey-form input {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+#survey-form #dropdown {
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+}
+
+#survey-form .radio-options,
+#survey-form .checkboxes {
+  position: relative;
+  bottom: 8px;
+  left: 1px;
+}
+
+#survey-form .titles {
+  font-size: 1.1rem;
+  padding: 10px 0;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+#survey-form .text-area {
+  border: none;
+  border-radius: 5px;
+}
+
+#survey-form .submit-btn {
+  margin: 15px 0;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  height: 30px;
+  align-self: center;
+}
+/*# sourceMappingURL=main.css.map */

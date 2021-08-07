@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <!-- BACKGROUND COLOR -->
+        <background-color class="bg-color"></background-color>
+        <!-- MAIN CONTAINER -->
+        <main class="main-container">
+            <!-- HEADER -->
+            <header class="header">
+                <h1 id="title">Survey form</h1>
+                <p id="description">Enter your informations to continue the hiring process</p>
+            </header>
+            <!-- FORM -->
+            <form action="" id="survey-form"> 
+                <!-- NAME -->
+                <label class="titles" for="name" id="name-label">Name</label>
+                <input type="text" placeholder="Enter your name" id="name" required>
+                <!-- EMAIL -->
+                <label class="titles" for="email" id="email-label">Email</label>
+                <input type="email" placeholder="Enter your email" id="email" required>
+                <!-- NUMBER -->
+                <label class="titles" for="number" id="number-label">Number</label>
+                <input type="number" placeholder="Enter your number" id="number" min="10" max="11" required>
+                <!-- SELECTION -->
+                <label class="titles" for="dropdown">Which are your stack?</label>
+                <select name="stack" id="dropdown">
+                    <option value="frontend" class="frontend">Front-end</option>
+                    <option value="backend" class="frontend">Back-end</option>
+                    <option value="full-stack" class="frontend">Full stack</option>
+                </select>
+                <!-- RADIO -->
+                <label for="" class="location titles">Where do you live?</label>
+                <div>
+                    <input class="locations" type="radio" value="sp" name="location">
+                    <label class="radio-options" for="sp">São Paulo, SP</label><br>
+                    <input class="locations" type="radio" value="bh" name="location">
+                    <label class="radio-options" for="bh">Belo Horizonte, MG</label><br>
+                    <input class="locations" type="radio" value="rj" name="location">
+                    <Label class="radio-options" for="rj">Rio de Janeiro, RJ</Label>
+                </div>
+                <!-- CHECKBOXES -->
+                <label for="technologies" class="radio titles">Known technologies</label>
+                <div>
+                    <input type="checkbox" value="node">
+                    <label class="checkboxes" for="node">Node.JS</label><br>
+                    <input type="checkbox" value="react">
+                    <label class="checkboxes" for="node">React</label><br>
+                    <input type="checkbox" value="react-native">
+                    <label class="checkboxes" for="node">React Native</label><br>
+                </div>
+                <!-- TEXT AREA -->
+                <label for="text-area" class="text-area titles">Any commentary?</label>
+                <textarea name="text-area" id="" cols="30" rows="10" class="text-area"></textarea>
+                <!-- SUBMIT BUTTON -->
+                <button type="submit" class="submit-btn" id="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
